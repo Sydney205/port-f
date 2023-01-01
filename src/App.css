@@ -144,9 +144,10 @@ nav ul .nav-item:hover .top-nav-icons {
 }
 
 nav ul .nav-item:hover .title {
-  background-color: rgba(0, 200, 255, 0.8);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   transition: 0.5s;
+  border: 2px solid rgb(0, 162, 255);
 }
 
 /* -----------------------------------------------SIDEBAR--------------------------------------------- */
@@ -440,7 +441,7 @@ nav ul .nav-item:hover .title {
 }
 
 #about-main-info {
-  position: relative;
+  /* position: relative; */
   top: 0;
   left: 0;
   right: 0;
@@ -451,8 +452,6 @@ nav ul .nav-item:hover .title {
   align-items: center;
   text-align: center;
   column-gap: 10vh;
-  background: none;
-  width: max-content;
 }
 
 #about-section h1 {
@@ -1205,6 +1204,10 @@ textarea {
     display: none;
   }
 
+  .card-box {
+    transform: scale(0.9);
+  }
+
   #contact-section .send-btn a {
     color: #222;
   }
@@ -1328,5 +1331,5 @@ textarea {
   width: max-content;
   border-radius: 10px;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
 }
