@@ -3,6 +3,7 @@ import Typed from "react-typed";
 import { HashLink } from "react-router-hash-link";
 import { FaChevronUp, FaPhoneVolume } from "react-icons/fa";
 import { MdPhoneEnabled, MdPhonelinkRing } from "react-icons/md";
+import MobileHelpNav from "./MobileHelpNav";
 
 function Home() {
   const [scrollArr, setScrollArr] = useState(true);
@@ -20,13 +21,14 @@ function Home() {
     window.addEventListener("scroll", appear);
   });
   return (
+    <>
     <section className="home-wrapper" id="home-section">
       <div className="container text-center" id="home-main-info">
         <h1 class="display-1">
           Dieke <span>Sydney</span>
         </h1>
         <br />
-        <p className="display-6">&#123; Software Engineer &#125;</p>{" "}
+        <p className="display-6">&#123; Software Developer &#125;</p>{" "}
         <Typed
           className="display-6 typed-text"
           strings={["Web Development", "FrontEnd and BackEnd", "UI/UX Animations"]}
@@ -57,6 +59,7 @@ function Home() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

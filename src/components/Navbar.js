@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import { FaBars, FaSkating } from "react-icons/fa";
-import {
-  MdOutlineEmail,
-  MdOutlineHome,
-  MdPerson,
-} from "react-icons/md";
+import { MdOutlineEmail, MdOutlineHome, MdPerson } from "react-icons/md";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [wid, setWid] = useState("-100%");
-  const [navbar, setNavbar] = useState("");
+  const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 66) {
-      setNavbar("rgba(0, 0, 0, 0.9)");
+    if (window.scrollY >= 90) {
+      setNavbar(true);
     } else {
-      setNavbar("");
+      setNavbar(false);
     }
   };
 
@@ -36,7 +34,8 @@ const Navbar = () => {
   return (
     <nav
       className="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 justify-content-center"
-      style={{ backgroundColor: `${navbar}`}}
+      style={{ backgroundColor: `${navbar}` }}
+      id={navbar ? "trans_nav" : "nav"}
     >
       <div className="menu-bars">
         <div>
@@ -83,6 +82,10 @@ const Navbar = () => {
           </NavHashLink>
         </li>
       </ul>
+
+      <button className="nav_btn" onClick={() => navigate("/Login")}>
+        Login
+      </button>
     </nav>
   );
 };

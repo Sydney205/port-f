@@ -8,11 +8,10 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  // FaPhp,
   FaBootstrap,
 } from "react-icons/fa";
-// import { DiMysql } from "react-icons/di";
-import { SiExpress, SiMongodb, SiWebpack } from "react-icons/si";
+import { MdPhoneAndroid } from "react-icons/md";
+import { SiExpress, SiMongodb } from "react-icons/si";
 
 class Skills extends Component {
   render() {
@@ -21,7 +20,7 @@ class Skills extends Component {
         <div className="container" id="skills-main-info">
           <h1 className="display-1 text-center">What i Do...</h1>
           <div className="col text-center">
-            <SiWebpack size={"1.5rem"} color="rgb(0, 162, 255)" /> Web
+            <MdPhoneAndroid size={"1.5rem"} color="rgb(0, 162, 255)" /> Web
             development,{" "}
             <FaLaptopCode size={"1.5rem"} color="rgb(0, 162, 255)" />
             FrontEnd and BackEnd,{" "}
@@ -92,16 +91,6 @@ class Skills extends Component {
                     />{" "}
                     Mongo DB
                   </li>
-                  {/* <li>
-                    <FaPhp size={"1.5rem"} color="#3355aa" className="icons" />
-                    <span className="code-brackets">&#60;?</span>PHP{" "}
-                    <span className="code-brackets">&#62;</span>
-                  </li>
-                  <li>
-                    <DiMysql size={"1.5rem"} color="orange" className="icons" />
-                    <span className="code-brackets">&#40; </span>My SQL{" "}
-                    <span className="code-brackets">&#41;</span>
-                  </li> */}
                 </ul>
               </div>
             </div>

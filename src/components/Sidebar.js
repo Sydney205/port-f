@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { AiFillHome, AiOutlineClose } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
-import { MdPerson } from 'react-icons/md'
-// import { FiGrid } from "react-icons/fi";
+import { MdPerson } from "react-icons/md";
 
 const Sidebar = (props) => {
   return (
@@ -39,20 +38,8 @@ const Sidebar = (props) => {
                 <span>Home</span>
               </Link>
             </li>
-            {/* {/* <li className="sidebar-text display-7">
-              <Link to="/Projects">
-                <span
-                  style={{
-                    marginRight: "30px",
-                    marginLeft: `${props.iconsLeft}`,
-                  }}
-                >
-                  <FiGrid size={"1.5rem"} className="sidebar-icons" />
-                </span>
-                <span>Projects</span>
-              </Link>
-            </li> */}
-             <li className="sidebar-text display-7">
+
+            <li className="sidebar-text display-7">
               <HashLink to="#about-section">
                 <span
                   style={{
@@ -64,7 +51,7 @@ const Sidebar = (props) => {
                 </span>
                 <span>About ME!</span>
               </HashLink>
-            </li> 
+            </li>
             <li className="sidebar-text display-7">
               <a
                 href="https://github.com/Sydney205"
@@ -103,7 +90,10 @@ const Sidebar = (props) => {
         </div>
         <div className="profile" style={{ left: `${props.profileLeft}` }}>
           <div className="profile-img">
-            <img src={process.env.PUBLIC_URL + "/ProPic.PNG"} alt="Profile-pic" />
+            <img
+              src={process.env.PUBLIC_URL + "/ProPic.PNG"}
+              alt="Profile-pic"
+            />
           </div>
           <div className="profile-content">
             <h4>Dieke Sydney</h4>

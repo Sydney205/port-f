@@ -27,7 +27,7 @@ function About() {
           <div className="cardI">
             <div className="imgBx">
               <img
-                src={process.env.PUBLIC_URL + "/ProPic.PNG"}
+                src={process.env.PUBLIC_URL + "/ProPic.png"}
                 alt="Profile-pic"
               />
             </div>
@@ -49,8 +49,10 @@ function About() {
                       Hi! i'm Sydney
                     </span>
                     <br />
-                    A FullStack developer and UI/UX javascript specialist and
-                    React.
+                    And I'm 18 Years old...
+                    <br />
+                    I'm a FullStack JS developer and UI/UX javascript specialist
+                    and React.
                     <br />
                     I enjoy building everything from websites to rich
                     interactive apps.
