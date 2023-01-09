@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
-import SignUp from "./SignUp";
+import SignUp from "../SignUp";
 
 const Projects = () => {
   return (
