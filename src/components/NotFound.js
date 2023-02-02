@@ -16,7 +16,7 @@ class NotFound extends Component {
           <h1>!Oops</h1>
           <img src={process.env.PUBLIC_URL + "/404.png"} alt="404 image" />
           <Link to={-1}>
-            <FaArrowLeft /> Back
+            <FaArrowLeft /> Go Back
           </Link>
         </section>
       </>
